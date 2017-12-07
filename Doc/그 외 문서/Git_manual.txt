@@ -1,0 +1,186 @@
+
+	-내가 누구다!!!-
+
+	git config --global user.name "이름"
+	git config --global user.email "이메일"
+
+
+
+
+	-git init-
+
+	git init	(저장소 폴더에서)
+
+
+
+
+	-파일 관리상태가 어떤가???-
+
+	git status	(Untracked files, Changes to be committed, Changes not staged for commit)
+
+
+
+	-반복-----------------------------------------
+
+
+	-파일을 commit할 수 있는 상태로-
+
+	git add 파일이름
+
+
+
+
+	-파일을 commit-
+
+	git commit 파일이름 -m "설명(예 "First commit")"
+
+
+
+
+	-파일 되돌리기-
+
+	git checkout 돌아갈주소	(git log를 보면 commit부분의 앞에 6자리 예: commit 3ec4a72fd2320c986a.... 여기서 '3ec4a7')
+
+	뒤로 갔다가 다시 앞으로도 올 수 있지만 다시 앞으로 오는거는 안좋은 방법임.
+
+	이걸로 브런치도 이동함.
+
+	-----------------------------------------------
+
+
+
+	-브런치 만들기-
+
+	git branch	(기본적으로 "master" 브런치가 생김)
+
+	git branch 하고싶은이름
+
+	git checkout 브런치이름		(이걸로 브런치 이동)
+
+
+
+	-브런치 삭제-
+
+	git branch 브런치이름 -d
+
+
+
+
+	-브런치 합치기-
+
+	git merge 합치고 싶은 브런치 이름	(현재 브런치에 입력한 브런치를 합치는거)
+
+
+
+
+	-브런치를 그래프로 확인-
+
+	gitk
+
+
+
+
+	+로그 확인+
+
+	git log
+	git log --stat		//통계 정보를 조회 가능
+	git log --pretty=oneline	//한줄에 이쁘게 정보를 출력
+	git log --pretty=format:"%h - %an, %ar :%s "	//날짜정보
+	git log --pretty=format:"%h - %an, %ar :%s " --graph	//그래프
+
+
+
+	+git ignore+
+
+	gitignore파일 만들고 하는건대 일단 필요없음 무시
+
+
+
+
+	+git 파일 제거+
+
+	git rm 파일이름
+
+
+
+
+	-원격저장소-
+
+	*올리기
+	
+	크게
+	git add -> git commit -> git push
+	순으로 하면됨
+
+
+
+	github에서 new repository	(원격저장소 생성)
+
+	원격 저장소에 처음 저장할 때는 밑에 나오는 echo "~~~" 쭉 복사해서 명령어창에 입력하면됨
+	
+	git remote add 원격이름(?) 주소	//원격주소 설정
+
+	git push -u 원격이름 브런치이름	//원격주소로 업로드
+
+
+
+	이후로는
+	git push -u 원격이름 브런치이름		으로 하면됨
+	
+
+
+
+	git remote	//원격 저장소를 보여줌
+
+	git remote -v	//원격 저장소 주소와 함께 보여줌
+
+	git remote rm 원격이름	//원격 삭제
+
+
+
+
+	*가져오기
+
+	clone : 전체를 다 가져오는 명령
+
+	git clone 원격주소
+
+
+
+	fork : 남의 Github Repository를 내 걸로 가져오는 것
+	
+	해당 주소로 가서 fork버튼 클릭
+
+	pull request : fork 한걸 수정하고 다시 가져가주세요 요청하는것
+
+	내 Github에서 pull request 버튼 클릭
+
+
+
+	pull : 가져와서 같은 Branch를 합쳐 버리는 명령 (merge까지 해줌)
+
+	git pull 원격이름 브런치이름
+
+
+	fetch : 변경 내용만 가져오고 안 합치는 명령
+
+	git fetch 원격이름 브런치이름
+
+	이후
+
+	git merge 원격이름/브런치이름
+
+
+
+
+
+	-git 히스토리 삭제-
+
+	rm -rf .git
+
+
+
+
+
+추가적으로 파일 add와 commit과 push 할때 파일이름 대신에 * 을 쓰면 모든 파일을 다 add하고 commit 할수 있음
+
