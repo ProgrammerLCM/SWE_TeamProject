@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.jaeyoungyun.todo2.UI.ScheduleUI">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15"
+            android:orientation="vertical"
+            >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="62.5dp"
+                android:text="1" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="62.5dp"
+                android:text="2" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="62.5dp"
+                android:text="3" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="62.5dp"
+                android:text="4" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="62.5dp"
+                android:text="5" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="62.5dp"
+                android:text="6" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="62.5dp"
+                android:text="7" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="62.5dp"
+                android:text="8" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="62.5dp"
+                android:text="9" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Mon"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Tue"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Wed"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Thu"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Fri"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15"
+            >
+
+            <GridView
+                android:id="@+id/schedule_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:horizontalSpacing="3dp"
+                android:numColumns="5"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="3dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

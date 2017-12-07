@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:background="#ffffff"
+    tools:context="com.example.jaeyoungyun.todo2.UI.AddSubjectUI">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"></LinearLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/subject_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/blue"
+                android:gravity="center_vertical"
+                android:text="subject name"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/professor"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/blue"
+                android:gravity="center_vertical"
+                android:text="Professor"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <EditText
+                android:id="@+id/add_subject_name_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/add_subject_professor_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/semester"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/blue"
+                android:gravity="center_vertical"
+                android:text="Semester"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/classroom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/blue"
+                android:gravity="center_vertical"
+                android:text="Class"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <EditText
+                android:id="@+id/add_subject_semester_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/add_subject_classroom_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/blue"
+                android:gravity="center_vertical"
+                android:text="Text"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <EditText
+                android:id="@+id/add_subject_textbook_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:id="@+id/g1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="15"
+                android:columnCount="6"
+                android:orientation="horizontal"
+                android:rowCount="9">
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:gravity="center"
+                    android:background="@color/darkRed"
+                    android:textColor="@color/white"
+                    android:text="Time" />
+
+                <TextView
+                    android:id="@+id/월"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@color/darkRed"
+                    android:gravity="center"
+                    android:text="MON"
+                    android:textAlignment="center"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tue"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@color/darkRed"
+                    android:gravity="center"
+                    android:text="TUE"
+                    android:textAlignment="center"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@color/darkRed"
+                    android:gravity="center"
+                    android:text="WED"
+                    android:textAlignment="center"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@color/darkRed"
+                    android:gravity="center"
+                    android:text="THU"
+                    android:textAlignment="center"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@color/darkRed"
+                    android:gravity="center"
+                    android:text="FRI"
+                    android:textAlignment="center"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/time1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@color/darkRed"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textAlignment="center" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox101"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox102"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox103"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox104"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox105"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+
+                <TextView
+                    android:id="@+id/time2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@color/darkRed"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textAlignment="center" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox201"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox202"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox203"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox204"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox205"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+
+                <TextView
+                    android:id="@+id/time3"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@color/darkRed"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textAlignment="center" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox301"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox302"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox303"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox304"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox305"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+
+                <TextView
+                    android:id="@+id/time4"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@color/darkRed"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textColor="@color/white"
+                    android:textAlignment="center" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox401"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox402"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox403"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox404"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox405"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+
+                <TextView
+                    android:id="@+id/time5"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@color/darkRed"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textColor="@color/white"
+                    android:textAlignment="center" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox501"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox502"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox503"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox504"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox505"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+
+                <TextView
+                    android:id="@+id/time6"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@color/darkRed"
+                    android:gravity="center"
+                    android:text="6"
+                    android:textColor="@color/white"
+                    android:textAlignment="center" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox601"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox602"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox603"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox604"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox605"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+
+                <TextView
+                    android:id="@+id/time7"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@color/darkRed"
+                    android:gravity="center"
+                    android:text="7"
+                    android:textColor="@color/white"
+                    android:textAlignment="center" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox701"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox702"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox703"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox704"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox705"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+
+                <TextView
+                    android:id="@+id/time8"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@color/darkRed"
+                    android:gravity="center"
+                    android:text="8"
+                    android:textColor="@color/white"
+                    android:textAlignment="center" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox801"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox802"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox803"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox804"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox805"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <TextView
+                    android:id="@+id/time9"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@color/darkRed"
+                    android:gravity="center"
+                    android:text="9"
+                    android:textColor="@color/white"
+                    android:textAlignment="center" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox901"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox902"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox903"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox904"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+
+                <CheckBox
+                    android:id="@+id/add_subject_checkBox905"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:background="@color/yellowRed" />
+            </GridLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add_subject_check_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:text="CHECK"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/add_subject_cancel_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/pink"
+            android:text="CANCEL"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+</LinearLayout>

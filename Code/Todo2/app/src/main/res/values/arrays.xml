@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="criteria">
+        <item>시작날짜</item>
+        <item>마감기한</item>
+        <item>실제 마감일</item>
+        <item>완료여부</item>
+        <item>중요도</item>
+    </string-array>
+</resources>

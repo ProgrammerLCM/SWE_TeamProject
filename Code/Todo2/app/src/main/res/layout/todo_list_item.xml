@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+            <CheckBox
+                android:id="@+id/todo_list_item_importance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/gray"
+                android:clickable="false"
+                android:layout_weight="0" />
+
+            <TextView
+                android:id="@+id/todo_list_item_todo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/gray"
+                android:layout_weight="0.2" />
+
+            <TextView
+                android:id="@+id/todo_list_item_todo_dueDate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/blue"
+                android:layout_weight="0.1" />
+
+
+    </LinearLayout>
+</LinearLayout>
