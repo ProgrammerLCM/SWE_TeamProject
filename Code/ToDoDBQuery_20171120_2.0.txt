@@ -1,0 +1,35 @@
+create table customer (
+	custnum int PRIMARY KEY AUTO_INCREMENT,
+	custname varchar(30) not null,
+	custpwd varchar(15) not null,
+	custemail varchar(50) 
+)
+
+create table Todolist (
+	tdnum int PRIMARY KEY AUTO_INCREMENT,
+	tdcontent varchar(255),
+	tdfinish boolean,
+	tdfinishtime datetime not null, 
+	tdimportant boolean,
+	tdname varchar(155) not null,
+	tddeadline datetime not null,
+	tdstart datetime not null,
+	tdhide boolean,
+	custnum int ,
+	lecname varchar(50) default null, 
+	FOREIGN KEY (custnum) REFERENCES customer(custnum) on update cascade on delete cascade,
+	FOREIGN KEY (lecname) REFERENCES lecture(lecname) on update cascade on delete cascade
+)
+
+create table lecture (
+	lecnum int AUTO_INCREMENT UNIQUE,
+	lecname varchar(50) not null,
+	lecpfname varchar(30),
+	lecroom varchar(30),
+	lectextbook varchar(50),
+	lectime varchar(30),
+	lecsemester int not null,
+	custnum int,
+	FOREIGN KEY (custnum) REFERENCES customer(custnum) on update cascade on delete cascade,
+	PRIMARY KEY (lecname,lecsemester,lectime)
+)
